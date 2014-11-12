@@ -1,0 +1,60 @@
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.exe.config
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.exe
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\DxpSimpleAPI.dll
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\WindowsFormsControlLibrary1.dll
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\WindowsFormsControlLibrary1.pdb
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS_Testing_Tool.Form1.resources
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS_Testing_Tool.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.exe
+c:\users\administrator\documents\visual studio 2013\Projects\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.pdb
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.exe.config
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.exe
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.pdb
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\DxpSimpleAPI.dll
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\WindowsFormsControlLibrary1.dll
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\WindowsFormsControlLibrary1.pdb
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS_Testing_Tool.Form1.resources
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS_Testing_Tool.Properties.Resources.resources
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.exe
+C:\Users\Administrator\Desktop\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.pdb
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.exe.config
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.exe
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.pdb
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.exe
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.pdb
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\DxpSimpleAPI.dll
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\WindowsFormsControlLibrary1.dll
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\WindowsFormsControlLibrary1.pdb
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.csprojResolveAssemblyReference.cache
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS_Testing_Tool.Form1.resources
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS_Testing_Tool.Properties.Resources.resources
+G:\日立化成山崎(勝田)\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.csproj.GenerateResource.Cache
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.exe.config
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.exe
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.pdb
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.exe
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.pdb
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\DxpSimpleAPI.dll
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\WindowsFormsControlLibrary1.dll
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\WindowsFormsControlLibrary1.pdb
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.csprojResolveAssemblyReference.cache
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS_Testing_Tool.Form1.resources
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS_Testing_Tool.Properties.Resources.resources
+C:\Users\pc\Desktop\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.csproj.GenerateResource.Cache
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.exe.config
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.exe
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.pdb
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.csprojResolveAssemblyReference.cache
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS_Testing_Tool.Form1.resources
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS_Testing_Tool.Properties.Resources.resources
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\obj\Debug\PCDCS Testing Tool.csproj.GenerateResource.Cache
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.exe
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\PCDCS Testing Tool.pdb
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\DxpSimpleAPI.dll
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\WindowsFormsControlLibrary1.dll
+Z:\MemberFolders\JB\Programs\PC-DCS Tool No1\PCDCS Testing Tool\PCDCS Testing Tool\bin\Debug\WindowsFormsControlLibrary1.pdb

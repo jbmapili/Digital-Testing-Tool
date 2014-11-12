@@ -1,0 +1,6 @@
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\bin\Release\WindowsFormsControlLibrary1.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\bin\Release\WindowsFormsControlLibrary1.pdb
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Release\WindowsFormsControlLibrary1.UserControl1.resources
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Release\WindowsFormsControlLibrary1.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Release\WindowsFormsControlLibrary1.dll
+C:\Users\Administrator\Documents\Visual Studio 2013\Projects\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Release\WindowsFormsControlLibrary1.pdb
