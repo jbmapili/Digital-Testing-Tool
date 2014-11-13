@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,7 +41,6 @@
             this.txtNode = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -51,31 +49,29 @@
             this.label12 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txtReg = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.maintable = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.data1 = new System.Windows.Forms.DataGridView();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.data1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Location = new System.Drawing.Point(12, 75);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(419, 141);
-            this.panel1.TabIndex = 33;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(323, 57);
+            this.label5.Location = new System.Drawing.Point(323, 56);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 17);
+            this.label5.Size = new System.Drawing.Size(29, 17);
             this.label5.TabIndex = 25;
-            this.label5.Text = "ON/OFF";
+            this.label5.Text = "ON";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(157, 57);
+            this.label4.Location = new System.Drawing.Point(141, 56);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(102, 17);
             this.label4.TabIndex = 22;
@@ -85,7 +81,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(266, 57);
+            this.label3.Location = new System.Drawing.Point(256, 56);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 17);
             this.label3.TabIndex = 19;
@@ -95,7 +91,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(49, 57);
+            this.label2.Location = new System.Drawing.Point(55, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 17);
             this.label2.TabIndex = 18;
@@ -174,26 +170,18 @@
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileName = "AlarmDic.csv";
             this.openFileDialog1.Filter = "AlarmDic.csv|*.csv";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label6.Location = new System.Drawing.Point(13, 57);
+            this.label6.Location = new System.Drawing.Point(13, 56);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 17);
             this.label6.TabIndex = 26;
             this.label6.Text = "No.";
-            // 
-            // panel2
-            // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Location = new System.Drawing.Point(12, 344);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(419, 141);
-            this.panel2.TabIndex = 34;
             // 
             // label7
             // 
@@ -273,11 +261,58 @@
             this.txtReg.Size = new System.Drawing.Size(100, 19);
             this.txtReg.TabIndex = 48;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(369, 56);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(35, 17);
+            this.label13.TabIndex = 50;
+            this.label13.Text = "OFF";
+            // 
+            // maintable
+            // 
+            this.maintable.AutoScroll = true;
+            this.maintable.ColumnCount = 6;
+            this.maintable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.maintable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
+            this.maintable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
+            this.maintable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 69F));
+            this.maintable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 49F));
+            this.maintable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.maintable.Location = new System.Drawing.Point(0, 0);
+            this.maintable.Name = "maintable";
+            this.maintable.RowCount = 1;
+            this.maintable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.maintable.Size = new System.Drawing.Size(399, 20);
+            this.maintable.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.maintable);
+            this.panel1.Location = new System.Drawing.Point(12, 75);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(419, 141);
+            this.panel1.TabIndex = 33;
+            // 
+            // data1
+            // 
+            this.data1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data1.Location = new System.Drawing.Point(12, 341);
+            this.data1.Name = "data1";
+            this.data1.RowTemplate.Height = 21;
+            this.data1.Size = new System.Drawing.Size(419, 170);
+            this.data1.TabIndex = 51;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 523);
+            this.Controls.Add(this.data1);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtReg);
             this.Controls.Add(this.label12);
@@ -286,7 +321,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel1);
@@ -303,6 +337,8 @@
             this.Name = "Form1";
             this.Text = "PC-DCS Testing Tool No1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.data1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,7 +346,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -324,7 +359,6 @@
         private System.Windows.Forms.TextBox txtNode;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -333,6 +367,10 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtReg;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TableLayoutPanel maintable;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView data1;
     }
 }
 

@@ -19,24 +19,15 @@ namespace PCDCS_Testing_Tool
         DxpSimpleAPI.DxpSimpleClass opc = new DxpSimpleAPI.DxpSimpleClass();
         List<string> registers = new List<string>() { };
         List<string> tags = new List<string>() { };
+        List<TextBox> tag_no = new List<TextBox>();
+        List<TextBox> reg_no = new List<TextBox>();
+        List<TextBox> valueReg = new List<TextBox>();
         string[] sItemIDArray = new string[5];
+        int a = -1;
         public Form1()
         {
             InitializeComponent();
         }
-        public Panel Panel2
-        {
-            get
-            {
-                return panel2;
-            }
-            set
-            {
-                panel2 = value;
-            }
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             
@@ -153,27 +144,63 @@ namespace PCDCS_Testing_Tool
                     }
 
 
-                    panel1.Controls.Clear();
+                    maintable.Controls.Clear();
 
                     if (list.Count > 0)
                     {
                         registers.Clear();
                         tags.Clear();
-                        for (int j = 0; j < list.Count; j++)                   
+                        tag_no.Clear();
+                        reg_no.Clear();
+                        valueReg.Clear();
+                        maintable.Visible = false;
+                        maintable.RowCount = list.Count;
+                        maintable.Height = 29 * list.Count;
+                        for (int i = 0; i < list.Count; i++)                   
                         {
-                            WindowsFormsControlLibrary1.UserControl1 uc = new WindowsFormsControlLibrary1.UserControl1(opc);
-                            uc.Location = new Point(0, 30*(j));
-                            panel1.Controls.Add(uc);
-                            uc.NoTxtBox = list[j][0];
-                            uc.TagTxtBox = list[j][1];
-                            uc.RegisterTxtBox = list[j][6];
-                            registers.Add(list[j][6]);
-                            tags.Add(list[j][1]);
+                            TextBox txtNo = new TextBox();
+                            txtNo.Text = i.ToString();
+                            txtNo.ReadOnly = true;
+                            maintable.Controls.Add(txtNo, 0, i);
+
+                            TextBox txtTagNo = new TextBox();
+                            txtTagNo.Text = list[i][1];
+                            txtTagNo.ReadOnly = true;
+                            maintable.Controls.Add(txtTagNo, 1, i);
+                            tag_no.Add(txtTagNo);
+
+                            TextBox txtRegNo = new TextBox();
+                            txtRegNo.Text = list[i][6];
+                            txtRegNo.ReadOnly = true;
+                            maintable.Controls.Add(txtRegNo, 2, i);
+                            reg_no.Add(txtRegNo);
+
+                            TextBox txtStatus = new TextBox();
+                            maintable.Controls.Add(txtStatus, 3, i);
+                            valueReg.Add(txtStatus);
+
+                            Button btnOn = new Button();
+                            btnOn.Text = "On";
+                            btnOn.Tag = i.ToString();
+                            btnOn.Click += btnOn_Click;
+                            maintable.Controls.Add(btnOn, 4, i);
+
+
+                            Button btnOff = new Button();
+                            btnOff.Text = "Off";
+                            btnOff.Tag = i.ToString();
+                            btnOff.Click += btnOff_Click;
+                            maintable.Controls.Add(btnOff, 5, i);
+
+                            registers.Add(list[i][6]);
+                            tags.Add(list[i][1]);
                         }
+                        maintable.Visible = true;
                         button1.Enabled = true;
                     }
                     else {
                         Label message = new Label();
+                        maintable.Visible = false;
                         message.Text = "There are no lists inside the file.";
                         message.Location = new Point(0, 30);
                         message.Width = 200;                        
@@ -181,6 +208,16 @@ namespace PCDCS_Testing_Tool
                     }
                 }
             }
+        }
+
+        void btnOff_Click(object sender, EventArgs e)
+        {
+            OpcOnOff(0, Convert.ToInt32((sender as Button).Tag.ToString()));
+        }
+
+        void btnOn_Click(object sender, EventArgs e)
+        {
+            OpcOnOff(1, Convert.ToInt32((sender as Button).Tag.ToString()));
         }
 
         private void btnDisconnect_Click(object sender, EventArgs e)
@@ -201,19 +238,78 @@ namespace PCDCS_Testing_Tool
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            if (a > -1)
+            {
+                reg_no[a].BackColor = SystemColors.Control;
+                tag_no[a].BackColor = SystemColors.Control;
+            }
             if (registers.Contains(txtReg.Text))
             {
-                int a = registers.IndexOf(txtReg.Text);
-                panel1.VerticalScroll.Value = a * 30;
+                a = registers.IndexOf(txtReg.Text);
+                reg_no[a].BackColor = Color.Red;
+                panel1.VerticalScroll.Value = a * 29;
             }
             else if (tags.Contains(txtReg.Text))
             {
-                int a = tags.IndexOf(txtReg.Text);
-                panel1.VerticalScroll.Value = a * 30;
+                a = tags.IndexOf(txtReg.Text);
+                tag_no[a].BackColor = Color.Red;
+                panel1.VerticalScroll.Value = a * 29;
             }
         }
-   
+
+        private void OpcOnOff(int value, int tag)
+        {
+            try
+            {
+                string[] target = new string[] { reg_no[tag].Text };
+                object[] val = new object[] { value };
+                int[] nErrorArray;
+
+                data1.ColumnCount = 5;
+                data1.Columns[0].Name = "Date Time";
+                data1.Columns[1].Name = "Tag No.";
+                data1.Columns[2].Name = "Register No";
+                data1.Columns[3].Name = "Status";
+                data1.Columns[4].Name = "Success/Error";
+
+                //StreamWriter sw = new StreamWriter(file, true);
+                if (opc.Write(target, val, out nErrorArray))
+                {
+                    //sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + "Write,Success");
+                    string[] row = new string[] { DateTime.Now.ToString(), tag_no[tag].Text, reg_no[tag].Text, valueReg[tag].Text, "Write Success" };
+                    data1.Rows.Add(row);
+                }
+                else
+                {
+                    valueReg[tag].Text = "Write Error";
+                    //sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + "Write,Error");
+                    string[] row = new string[] { DateTime.Now.ToString(), tag_no[tag].Text, reg_no[tag].Text, valueReg[tag].Text, "Write Error" };
+                    data1.Rows.Add(row);
+                }
+                short[] wQualityArray;
+                OpcRcw.Da.FILETIME[] fTimeArray;
+
+                if (opc.Read(target, out val, out wQualityArray, out fTimeArray, out nErrorArray) == true)
+                {
+                    valueReg[tag].Text = val[0].ToString();
+                    //sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + "Read,Success");
+                    string[] row = new string[] { DateTime.Now.ToString(), tag_no[tag].Text, reg_no[tag].Text, valueReg[tag].Text, "Read Success" };
+                    data1.Rows.Add(row);
+                }
+                else
+                {
+
+                    //sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + "Read,Error");
+                    string[] row = new string[] { DateTime.Now.ToString(), tag_no[tag].Text, reg_no[tag].Text, valueReg[tag].Text, "Read Error" };
+                    data1.Rows.Add(row);
+                }
+                //sw.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
 
   
     }

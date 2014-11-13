@@ -13,3 +13,11 @@ G:\日立化成山崎(勝田)\PC-DCS Tool No1\WindowsFormsControlLibrary1\Window
 G:\日立化成山崎(勝田)\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Debug\FirstUserControl.csproj.GenerateResource.Cache
 G:\日立化成山崎(勝田)\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.dll
 G:\日立化成山崎(勝田)\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.pdb
+C:\Users\pc\Desktop\Currently Creating\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\bin\Debug\WindowsFormsControlLibrary1.dll
+C:\Users\pc\Desktop\Currently Creating\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\bin\Debug\WindowsFormsControlLibrary1.pdb
+C:\Users\pc\Desktop\Currently Creating\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\bin\Debug\DxpSimpleAPI.dll
+C:\Users\pc\Desktop\Currently Creating\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Debug\FirstUserControl.csprojResolveAssemblyReference.cache
+C:\Users\pc\Desktop\Currently Creating\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.UserControl1.resources
+C:\Users\pc\Desktop\Currently Creating\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Debug\FirstUserControl.csproj.GenerateResource.Cache
+C:\Users\pc\Desktop\Currently Creating\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.dll
+C:\Users\pc\Desktop\Currently Creating\PC-DCS Tool No1\WindowsFormsControlLibrary1\WindowsFormsControlLibrary1\obj\Debug\WindowsFormsControlLibrary1.pdb
