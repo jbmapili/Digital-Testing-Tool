@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 using OpcRcw.Da;
 using Microsoft.VisualBasic.FileIO;
+using System.IO;
 
 namespace PCDCS_Testing_Tool
 {
@@ -24,9 +25,27 @@ namespace PCDCS_Testing_Tool
         List<TextBox> valueReg = new List<TextBox>();
         string[] sItemIDArray = new string[5];
         int a = -1;
+        string file;
         public Form1()
         {
             InitializeComponent();
+            try
+            {
+                file = "Log\\" + DateTime.Now.ToString("MMddyyyy HHmmss") + ".txt";
+                if (Directory.Exists(Application.StartupPath + "\\Log"))
+                {
+                    File.Create(file);
+                }
+                else
+                {
+                    Directory.CreateDirectory(Application.StartupPath + "\\Log");
+                    File.Create(file);
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -100,6 +119,7 @@ namespace PCDCS_Testing_Tool
 
         private void FileReadBtn_Click(object sender, EventArgs e)
         {
+
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 List<string[]> list = new List<string[]>();
@@ -198,7 +218,8 @@ namespace PCDCS_Testing_Tool
                         maintable.Visible = true;
                         button1.Enabled = true;
                     }
-                    else {
+                    else
+                    {
                         Label message = new Label();
                         maintable.Visible = false;
                         message.Text = "There are no lists inside the file.";
@@ -272,18 +293,19 @@ namespace PCDCS_Testing_Tool
                 data1.Columns[3].Name = "Status";
                 data1.Columns[4].Name = "Success/Error";
 
-                //StreamWriter sw = new StreamWriter(file, true);
+                StreamWriter sw = new StreamWriter(file, true);
                 if (opc.Write(target, val, out nErrorArray))
                 {
-                    //sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + "Write,Success");
+                    valueReg[tag].Text = value.ToString();
+                    sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + valueReg[tag].Text + ",Write Success");
                     string[] row = new string[] { DateTime.Now.ToString(), tag_no[tag].Text, reg_no[tag].Text, valueReg[tag].Text, "Write Success" };
                     data1.Rows.Add(row);
                 }
                 else
                 {
                     valueReg[tag].Text = "Write Error";
-                    //sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + "Write,Error");
-                    string[] row = new string[] { DateTime.Now.ToString(), tag_no[tag].Text, reg_no[tag].Text, valueReg[tag].Text, "Write Error" };
+                    sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + value.ToString() + ",Write Error");
+                    string[] row = new string[] { DateTime.Now.ToString(), tag_no[tag].Text, reg_no[tag].Text, value.ToString(), "Write Error" };
                     data1.Rows.Add(row);
                 }
                 short[] wQualityArray;
@@ -292,18 +314,18 @@ namespace PCDCS_Testing_Tool
                 if (opc.Read(target, out val, out wQualityArray, out fTimeArray, out nErrorArray) == true)
                 {
                     valueReg[tag].Text = val[0].ToString();
-                    //sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + "Read,Success");
+                    sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + valueReg[tag].Text + ",Read Success");
                     string[] row = new string[] { DateTime.Now.ToString(), tag_no[tag].Text, reg_no[tag].Text, valueReg[tag].Text, "Read Success" };
                     data1.Rows.Add(row);
                 }
                 else
                 {
 
-                    //sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + "Read,Error");
+                    sw.WriteLine(DateTime.Now.ToString() + "," + tag_no[tag].Text + "," + reg_no[tag].Text + "," + valueReg[tag].Text + ",Read Error");
                     string[] row = new string[] { DateTime.Now.ToString(), tag_no[tag].Text, reg_no[tag].Text, valueReg[tag].Text, "Read Error" };
                     data1.Rows.Add(row);
                 }
-                //sw.Close();
+                sw.Close();
             }
             catch (Exception ex)
             {
